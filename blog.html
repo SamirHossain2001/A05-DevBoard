@@ -36,7 +36,7 @@
 
   <body class="poppins-font bg-[#F4F7FF] min-h-screen">
     <header class="container mx-auto pt-6">
-      <nav class="bg-white p-5 rounded-2xl flex justify-between">
+      <nav class="bg-white p-5 rounded-2xl flex justify-between shadow-md">
         <div class="flex items-center gap-3">
           <img src="assets/logo.png" alt="" />
           <h1 class="font-light text-4xl">
@@ -46,15 +46,81 @@
         <div class="">
           <button
             id="back-btn"
-            class="btn bg-[#3752FD] text-white rounded-xl p-8 text-2xl">
+            class="btn bg-[#3752FD] text-white rounded-xl p-8 text-2xl"
+          >
             Back to Desk
           </button>
         </div>
       </nav>
     </header>
 
-    <main class="container mx-auto pt-6">
-        <h1>hello</h1>
+    <main class="container mx-auto pt-6 pb-52">
+      <section>
+        <h1 class="text-3xl font-bold text-center mt-4">Blogs</h1>
+        <!-- Q-1 -->
+        <div class="bg-white mt-4 rounded-lg">
+          <h2 class="font-semibold text-2xl p-8">
+            Question-1: What are the different ways to select an element in the
+            DOM?
+          </h2>
+          <hr class="border-dashed text-[#3752FD] opacity-20" />
+          <p class="p-8 opacity-80 text-xl line leading-8">
+            There are multiple ways to select an element in the DOM. The most common methods are: <br>
+            1. Select an element by id using getElementById() function. <br>
+            2. Select multiple element having a common class using getElementsByClassName() function. <br>
+            3. Select multiple elements by their tag name using getElementsByTagName() function.
+            4. Select multiple elements using CSS selector using querySelectorAll() function. <br>
+            5. Select the first element that matches the CSS selector using querySelector() function. 
+          </p>
+        </div>
+        <!-- Q-2 -->
+        <div class="bg-white mt-4 rounded-lg">
+          <h2 class="font-semibold text-2xl p-8">
+            Question-2: What is the difference between innerHTML, innerText, and
+            textContent?
+          </h2>
+          <hr class="border-dashed text-[#3752FD] opacity-20" />
+          <p class="p-8 opacity-80 text-xl leading-8">
+            In HTML, innerHTML, innerText, and textContent are used to read and update the content of HTML elements. <br>
+            innerHTML: it can read and update both HTML tag and text content. <br>
+            innerText: it can only read and update the text inside an element. It also ignore hidden content. <br>
+            textContent: it is same as innerText but the main difference is it can read and update the hidden contents.
+          </p>
+        </div>
+        <!-- Q-3 -->
+        <div class="bg-white mt-4 rounded-lg">
+          <h2 class="font-semibold text-2xl p-8">
+            Question-3: What is event delegation in the DOM?
+          </h2>
+          <hr class="border-dashed text-[#3752FD] opacity-20" />
+          <p class="p-8 opacity-80 text-xl leading-8">
+            When we have multiple child inside a single container, adding event listener to all of them individually makes it slower to process. Also if we want to add a new child, we have to add an event listener every time. Event delegation is a tecnique where single parent handle event of multiple child using bubbling tecnique. By using event.target we can capture any click events.
+          </p>
+        </div>
+        <!-- Q-4 -->
+        <div class="bg-white mt-4 rounded-lg">
+          <h2 class="font-semibold text-2xl p-8">
+            Question-4: What is event bubbling in the DOM?
+          </h2>
+          <hr class="border-dashed text-[#3752FD] opacity-20" />
+          <p class="p-8 opacity-80 text-xl leading-8">
+            Event bubbling is a process in which an event begins at the target element and travels upward through its parent elements in the DOM hierarchy. <br> Like: body -> div -> button, if the button is being clicked, it will capture button first using capture phase. Then it will bubble upward div -> section -> body -> HTML -> document.
+          </p>
+        </div>
+        <!-- Q-5 -->
+        <div class="bg-white mt-4 rounded-lg">
+          <h2 class="font-semibold text-2xl p-8">
+            Question-5: How do you create, add, and remove elements using
+            JavaScript?
+          </h2>
+          <hr class="border-dashed text-[#3752FD] opacity-20" />
+          <p class="p-8 opacity-80 text-xl leading-8">
+            create: we can create an element using document.createElement(tag) function. <br>
+            add: we can append a new element using parentContainer.appendChild(element) function. <br>
+            remove: we can remove an element using parentContainer.removeChild(element) or child.remove() function.
+          </p>
+        </div>
+      </section>
     </main>
     <!-- Scripts -->
     <script src="scripts/blog.js"></script>
